@@ -1,54 +1,43 @@
-var disqus_shortname="maxcleanid";
-var disqus_url = disqus_blogger_current_url;
-
-(function () {
-    "use strict";
-    var get_comment_block = function () {
-        var block = document.getElementById('comments');
-        if (!block) {
-            block = document.getElementById('disqus-blogger-comment-block');
+<div id="disqus_thread"></div>
+<script>
+window.addEventListener('message', receiveMessage, false);
+function receiveMessage(event)
+{
+    if (event.data) {
+        var msg;
+        try {
+            msg = JSON.parse(event.data);
+        } catch (err) {
+            // Do nothing
         }
-        return block;
+        if (!msg)
+            return false;
+
+        if (msg.name === 'resize') {
+            window.parent.postMessage({
+              sentinel: 'amp',
+              type: 'embed-size',
+              height: msg.data.height
+            }, '*');
+        }
+    }
+}
+</script>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    var disqus_config = function () {
+        this.page.url = window.location;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = window.location.hash; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
-    var comment_block = get_comment_block();
-    if (!!comment_block) {
-        var disqus_div = document.createElement('div');
-        disqus_div.id = 'disqus_thread';
-        comment_block.innerHTML = '';
-        comment_block.appendChild(disqus_div);
-        comment_block.style.display = 'block';
-        var dsq = document.createElement('script');
-        dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.body).appendChild(dsq);
-    }
-})();
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
 
-!function(e,n,t){var o,c=e.getElementsByTagName(n)[0];e.getElementById(t)||(o=e.createElement(n),o.id=t,o.src="//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3",c.parentNode.insertBefore(o,c))}(document,"script","facebook-jssdk");
+        s.src = '//EXAMPLE.disqus.com/embed.js';
 
-    var divs = ["disqus-box", "blogger-box", "facebook-box"];
-    var visibleDivId = null;
-    function toggleVisibility(divId) {
-      if(visibleDivId === divId) {
-        visibleDivId = null;
-      } else {
-        visibleDivId = divId;
-      }
-      hideNonVisibleDivs();
-    }
-    function hideNonVisibleDivs() {
-      var i, divId, div;
-      for(i = 0; i < divs.length; i++) {
-        divId = divs[i];
-        div = document.getElementById(divId);
-        if(visibleDivId === divId) {
-          div.style.display = "block";
-        } else {
-          div.style.display = "none";
-        }
-      }
-    }
-
-$(".commentbtn").click(function (e) {
-$(this).addClass("btncurrent").siblings().removeClass("btncurrent");
-});
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
