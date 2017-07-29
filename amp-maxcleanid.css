@@ -3,8 +3,6 @@ body{font-family:&#39;Roboto&#39;, sans-serif; font-size:14px; background-color:
 ----------------------------------------------- */
 
 /*Color Schemes and Colors*/
-.dark-scheme .header-logo,
-.dark-scheme .landing-logo,
 .dark-scheme .menu-scroll{background-color:rgba(0,0,0,0.95); border:solid 0px #1f1f1f;}
 .dark-scheme .menu-item{border-bottom:solid 1px rgba(255,255,255,0.04);}
 .dark-scheme .active-item em{background-color:#2ECC71;}
@@ -30,6 +28,31 @@ body{font-family:&#39;Roboto&#39;, sans-serif; font-size:14px; background-color:
 .dark-scheme .sidebar-copyright{color:#FFFFFF;}
 .dark-scheme .sidebar-logo-text{color:rgba(255,255,255,0.5); border-bottom:solid 1px rgba(255,255,255,0.04);}
 
+.light-scheme .menu-sidebar{background-color:#FFFFFF;}
+.light-scheme .menu-scroll{background-color:#FFFFFF; border-bottom:solid 1px rgba(0,0,0,0.1);}
+.light-scheme .menu-item{border-bottom:solid 1px rgba(0,0,0,0.05);}
+.light-scheme .active-item em{background-color:#2ECC71;}
+.light-scheme .active-item strong{color:#1f1f1f; font-weight:500;}
+.light-scheme .active-item i:first-child{color:rgba(160,212,104,1);}
+.light-scheme .menu-item span{color:#1f1f1f;}
+.light-scheme .menu-item i:first-child{color:#1f1f1f;}
+.light-scheme .menu-item i:last-child{color:#cacaca;}
+.light-scheme .toggle-menu-header{color:#1f1f1f;}
+.light-scheme input[id="toggle-menu"] + label .l1, 
+.light-scheme input[id="toggle-menu"] + label .l2, 
+.light-scheme input[id="toggle-menu"] + label .l3{background-color:#1f1f1f;}
+.light-scheme .submenu-item label{color:#1f1f1f;}
+.light-scheme input[data-submenu-items] + label:before {color:#1f1f1f;}
+.light-scheme input[data-submenu-items] + label:before { color:#1f1f1f;}
+.light-scheme input[data-submenu-items]:checked + label:before { color:#ED5565;}
+.light-scheme .submenu-wrapper .menu-item .fa-angle-right{color:#cacaca;}
+.light-scheme .submenu-wrapper a:last-child{border-bottom:solid 1px rgba(0,0,0,0.01);}
+.light-scheme .submenu-wrapper a{color:#1f1f1f;}
+.light-scheme header{background-color:rgba(255,255,255,0.95); border-bottom:solid 1px rgba(0,0,0,0.1);}
+.light-scheme .header-icon-1, .header-icon-2{color:#000000;}
+.light-scheme .sidebar-socials a{border-right:solid 1px rgba(0,0,0,0.05); border-bottom:solid 1px rgba(0,0,0,0.05); color:#1f1f1f;}
+.light-scheme .sidebar-copyright{color:#1f1f1f;}
+.light-scheme .sidebar-logo-text{color:rgba(0,0,0,0.5); border-bottom:solid 1px rgba(0,0,0,0.05);}
 
 .bg-teal-light{ background-color: #1abc9c; color:#FFFFFF}
 .bg-teal-dark{  background-color: #16a085; color:#FFFFFF}
