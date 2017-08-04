@@ -1,8 +1,8 @@
 {
-  "name": "Maximum Cleaning Indonesia",
+  "name": "Maxcleanid",
   "short_name": "Maxcleanid",
-  "description": "Profesional Laundry Cuci Sofa",
-  "theme_color": "#FFFFFF",
+  "description": "Maximum Cleaning Indonesia",
+  "theme_color": "#000000",
   "background_color": "#FFFFFF",
   "display": "standalone",
   "start_url": ".",
