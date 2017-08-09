@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "api_version": 1,
+  "layout": {
+    "logo": "https://image.ibb.co/g8JR6a/yandex_browser_50x50.png",
+    "color": "#000000",
+    "show_title": true
+  }
+}
