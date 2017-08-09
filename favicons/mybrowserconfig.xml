@@ -1,0 +1,11 @@
+<browserconfig>
+  <msapplication>
+    <tile>
+      <square70x70logo src="https://image.ibb.co/gtACev/mstile_70x70.png"/>
+      <square150x150logo src="https://image.ibb.co/eg9usF/mstile_150x150.png"/>
+      <wide310x150logo src="https://image.ibb.co/kkQOma/mstile_310x150.png"/>
+      <square310x310logo src="https://image.ibb.co/iCDCCF/mstile_310x310.png"/>
+      <TileColor>#ffffff</TileColor> 
+    </tile>
+  </msapplication>
+</browserconfig>
