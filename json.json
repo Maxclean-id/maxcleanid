@@ -1,0 +1,16 @@
+{
+  "name": "Maxcleanid",
+  "short_name": "Maxcleanid",
+  "description": "Maximum Cleaning Indonesia",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "display": "standalone",
+  "start_url": ".",
+  "icons": [
+    {
+      "src": "https://image.ibb.co/do9ima/android_chrome_512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
