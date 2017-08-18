@@ -1,4 +1,3 @@
-    <script type="text/javascript">
       (function() {
         // this guy right here
         document.getElementsByClassName('g-plus')[0].setAttribute('data-width', document.getElementById('gp-wrap').clientWidth);
@@ -6,4 +5,3 @@
         po.src = 'https://apis.google.com/js/platform.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
       })();
-    </script>
