@@ -27,8 +27,9 @@ var themes = getQueryVariable("theme");
 </script>
 </head>
 <body>
+<div class='gp-wrap' id='gp-wrap'>
 <script>
-document.write('<div class='gp-wrap' id='gp-wrap'><div class="g-plus" data-action="followers" data-height="240" data-href="'+ users +'" data-source="blogger:blog:followers" data-theme="'+ themes +'" data-width="280"></div></div>');
+document.write('<div class="g-plus" data-action="followers" data-height="240" data-href="'+ users +'" data-source="blogger:blog:followers" data-theme="'+ themes +'" data-width="280"></div>');
 </script>
     <script type='text/javascript'>
       (function() {
@@ -39,5 +40,6 @@ document.write('<div class='gp-wrap' id='gp-wrap'><div class="g-plus" data-actio
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
       })();
     </script>
+</div>
 </body>
 </html>
