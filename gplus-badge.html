@@ -22,12 +22,12 @@ function getQueryVariable(variable) {
 	}
 	return(false);
 }
-var users = getQueryVariable("user");
+var users = getQueryVariable("userid");
 var themes = getQueryVariable("theme");
 </script>
 </head>
 <body>
-<div class='gp-wrap' id='gp-wrap'>
+<div class='gp-wrap' id='gp-wrap' title='g-plus-badge'>
 <script>
 document.write('<div class="g-person" data-action="followers" data-href="'+ users +'" data-theme="'+ themes +'" data-width="450" data-rel="author"></div>');
 </script>
